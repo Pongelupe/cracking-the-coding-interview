@@ -8,23 +8,21 @@ import ppongelupe.ctci.chapter2.Node;
  * amount, or it might be hopping multiple nodes for each one node that the
  * <i>"slow" node</i> iterates through.
  * 
- * <br>
- * <br>
- * 
- * This example shows the technique for the following exercise: <br>
- * Suppose you had a linked list
- * <code>a_1 -> a_2 -> ... -> a_n -> b_1 -> b_2 -> ... -> b_n</code> and you
- * need to rearrange it into
- * <code>a_1 -> b_1 -> a_2 -> b_2 -> ... -> a_n -> b_n</code>. You do not know
- * the length of the linked list (but you do know that the length is an
- * <b>even</b> number).
- * 
- * 
  * @author ppongelupe
  */
 public class RunnerTechnique {
 	
 	/**
+	 * This example shows the technique for the following exercise: <br>
+	 * Suppose you had a linked list
+	 * <code>a_1 -> a_2 -> ... -> a_n -> b_1 -> b_2 -> ... -> b_n</code> and you
+	 * need to rearrange it into
+	 * <code>a_1 -> b_1 -> a_2 -> b_2 -> ... -> a_n -> b_n</code>. You do not know
+	 * the length of the linked list (but you do know that the length is an
+	 * <b>even</b> number).
+	 * 
+	 * <br>
+	 * <br>
 	 * 
 	 * You could have one pointer <i>p1</i> (the fast pointer) move every two
 	 * elements for every one move that <i>p2</i> makes. When <i>p1</i> hits the end
