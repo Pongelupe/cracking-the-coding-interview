@@ -18,21 +18,21 @@ class DeleteMiddleNodeTest {
 	
 	private DeleteMiddleNode target;
 	
-	private Node head;
+	private Node<String> head;
 	
-	private Map<String, Node> nodeMap;
+	private Map<String, Node<String>> nodeMap;
 	
 	private Queue<String> queue;
 
 	@BeforeEach
 	void setUp() throws Exception {
 		target = new DeleteMiddleNode();
-		head = new Node("a1");
+		head = new Node<>("a1");
 		nodeMap = new HashMap<>();
 		var p = head;
 		var l = List.of("a2", "a3", "b1", "b2", "b3");
 		for (String e : l) {
-			var node = new Node(e);
+			var node = new Node<>(e);
 			p.next = node;
 			p = p.next;
 			nodeMap.put(e, node);

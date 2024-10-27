@@ -18,16 +18,16 @@ class RunnerTechniqueTest {
 	
 	private RunnerTechnique target;
 	
-	private Node head;
+	private Node<String> head;
 
 	@BeforeEach
 	void setUp() throws Exception {
 		target = new RunnerTechnique();
-		head = new Node("a1");
+		head = new Node<>("a1");
 		var p = head;
 		var l = List.of("a2", "a3", "b1", "b2", "b3");
 		for (String e : l) {
-			p.next = new Node(e);
+			p.next = new Node<>(e);
 			p = p.next;
 		}
 	}

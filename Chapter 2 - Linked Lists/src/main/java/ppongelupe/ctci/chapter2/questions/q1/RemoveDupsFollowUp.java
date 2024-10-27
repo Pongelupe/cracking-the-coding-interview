@@ -30,8 +30,8 @@ public class RemoveDupsFollowUp extends RemoveDups {
 	 * @return A linked list without the duplicated elements
 	 */
 	@Override
-	public Node removeDuplicates(Node head) {
-		Node formerNode = null;
+	public Node<String> removeDuplicates(Node<String> head) {
+		Node<String> formerNode = null;
 		var p = head;
 
 		while (p != null) {
@@ -55,7 +55,7 @@ public class RemoveDupsFollowUp extends RemoveDups {
 	 * @param data
 	 * @return
 	 */
-	private boolean containsElement(Node head, Node formerNode, String data) {
+	private boolean containsElement(Node<String> head, Node<String> formerNode, String data) {
 		if (formerNode == null) return false;
 		while(head.next != null) {
 			if (head.data.equals(formerNode.data)) return false;

@@ -24,7 +24,7 @@ public class ReturnKthToLast {
 	 *             linked list</b>
 	 * @return
 	 */
-	public Node findKthToLast(Node head, int k) {
+	public Node<String> findKthToLast(Node<String> head, int k) {
 		var length = 0;
 		var p = head;
 

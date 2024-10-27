@@ -3,13 +3,13 @@ package ppongelupe.ctci.chapter2;
 /**
  * @author ppongelupe
  */
-public class Node {
+public class Node<T> {
 
-	public Node next = null;
+	public Node<T> next = null;
 	
-	public String data;
+	public T data;
 
-	public Node(String data) {
+	public Node(T data) {
 		this.data = data;
 	}
 	

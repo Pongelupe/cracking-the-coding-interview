@@ -19,7 +19,7 @@ public class DeleteMiddleNode {
 	 * @param node A node in the middle of a singly linked list
 	 * @return
 	 */
-	public boolean deleteMiddleNode(Node node) {
+	public boolean deleteMiddleNode(Node<String> node) {
 		if (node.next == null) return false;
 
 		node.data = node.next.data;

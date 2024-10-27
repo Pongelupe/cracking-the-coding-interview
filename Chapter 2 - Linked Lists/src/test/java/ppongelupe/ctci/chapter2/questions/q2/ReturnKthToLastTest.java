@@ -13,16 +13,16 @@ class ReturnKthToLastTest {
 	
 	private ReturnKthToLast target;
 	
-	private Node head;
+	private Node<String> head;
 
 	@BeforeEach
 	void setUp() throws Exception {
 		target = new ReturnKthToLast();
-		head = new Node("a1");
+		head = new Node<>("a1");
 		var p = head;
 		var l = List.of("a2", "a1", "a3", "b1", "a2", "a3");
 		for (String e : l) {
-			p.next = new Node(e);
+			p.next = new Node<>(e);
 			p = p.next;
 		}
 	}

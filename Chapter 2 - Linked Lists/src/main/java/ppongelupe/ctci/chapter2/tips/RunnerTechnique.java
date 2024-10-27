@@ -33,7 +33,7 @@ public class RunnerTechnique {
 	 * @param head The head of a linked list
 	 * @return Rearranged linked list head
 	 */
-	public Node arrange(Node head) {
+	public Node<String> arrange(Node<String> head) {
 		var n = 0;
 		var fastPointer = head;
 		var slowPointer = head;
@@ -44,12 +44,12 @@ public class RunnerTechnique {
 			n++;
 		}
 
-		var response = new Node(null);
+		var response = new Node<String>(null);
 		fastPointer = response;
 
 		for (int i = 0; i < n; i++) {
-			fastPointer.next = new Node(head.data);
-			fastPointer.next.next = new Node(slowPointer.data);
+			fastPointer.next = new Node<>(head.data);
+			fastPointer.next.next = new Node<>(slowPointer.data);
 			head = head.next;
 			slowPointer = slowPointer.next;
 			fastPointer = fastPointer.next.next;
