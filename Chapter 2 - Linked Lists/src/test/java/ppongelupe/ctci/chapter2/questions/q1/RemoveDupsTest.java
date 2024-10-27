@@ -1,6 +1,6 @@
 package ppongelupe.ctci.chapter2.questions.q1;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.LinkedList;
 import java.util.List;
