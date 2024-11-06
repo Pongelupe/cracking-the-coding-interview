@@ -15,15 +15,26 @@ public class BinaryTree<T extends Comparable<T>> {
 		}
 	}
 	
-	public void insert(BinaryTreeNode<T> node) {
-		if (root == null) this.root = node;
+	public BinaryTreeNode<T> insert(BinaryTreeNode<T> node) {
+		if (root == null) {
+			this.root = node;
+			return root;
+		}
 		else {
-			insert(node, root);
+			return insert(node, root);
 		}
 	}
+	
 
-	private void insert(BinaryTreeNode<T> node, BinaryTreeNode<T> parentNode) {
-		if (parentNode.left == null) {}
+	private BinaryTreeNode<T> insert(BinaryTreeNode<T> node, BinaryTreeNode<T> parentNode) {
+		if (parentNode == null) return node;
+		if (node.data.compareTo(parentNode.data) < 0) {
+			parentNode.left = insert(node, parentNode.left);
+		} else {
+			parentNode.right = insert(node, parentNode.right);
+		}
+		
+		return parentNode;
 	}
 	
 }
