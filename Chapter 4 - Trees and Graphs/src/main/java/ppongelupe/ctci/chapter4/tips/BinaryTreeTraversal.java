@@ -4,6 +4,11 @@ import java.util.function.Consumer;
 
 import ppongelupe.ctci.chapter4.BinaryTreeNode;
 
+/**
+ * 
+ * @param <T>
+ * @author ppongelupe
+ */
 public class BinaryTreeTraversal<T extends Comparable<T>> {
 
 	public void inOrderTraversal(BinaryTreeNode<T> node, Consumer<BinaryTreeNode<T>> visit) {

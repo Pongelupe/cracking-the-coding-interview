@@ -18,6 +18,17 @@ class BinaryTreeTraversalTest {
 
 	private BinaryTree<Integer> tree;
 
+	/**
+	 * It creates the following tree:
+	 * 
+	 * 		  10
+	 * 		/    \
+	 *     5      20
+	 *    / \    /  \
+	 *   3   9  18  21
+	 * 
+	 * @throws Exception
+	 */
 	@BeforeEach
 	void setUp() throws Exception {
 		this.tree = new BinaryTree<>();
